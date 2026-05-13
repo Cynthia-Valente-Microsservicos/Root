@@ -1,9 +1,6 @@
 [submodule "api/account"]
 	path = api/account
 	url = https://github.com/Cynthia-Valente-Microsservicos/account.git
-[submodule "api/acount-service"]
-	path = api/acount-service
-	url = https://github.com/Cynthia-Valente-Microsservicos/account-service.git
 [submodule "api/auth"]
 	path = api/auth
 	url = https://github.com/Cynthia-Valente-Microsservicos/auth.git
@@ -31,9 +28,6 @@
 [submodule "api/product-service"]
 	path = api/product-service
 	url = https://github.com/Cynthia-Valente-Microsservicos/product-service.git
-[submodule "module"]
-	path = module
-	url = https://github.com/Cynthia-Valente-Microsservicos/website.git
 [submodule "website"]
 	path = website
 	url = https://github.com/Cynthia-Valente-Microsservicos/website.git
