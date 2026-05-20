@@ -1,8 +1,8 @@
-site_name: Platform - Distributed Systems, Containerization, Microservices, Architectures, API, DevOps, Cloud, Orchestration, Cloud Service Models
-site_author: <Your name here>
-site_url: https://<username-studies>.github.io/platform
-repo_url: https://github.com/<username-studies>/platform
-repo_name: github/platform
+site_name: Grupo 6 - Documentação
+site_author: Yasutake, C. N.; Souza, G. V. V. B.
+site_url: https://Cynthia-Valente-Microsservicos.github.io/Root
+repo_url: https://github.com/Cynthia-Valente-Microsservicos/Root.git
+repo_name: github/Root
 
 theme:
   name: material
