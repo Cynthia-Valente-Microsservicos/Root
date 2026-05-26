@@ -210,3 +210,4 @@ plugins/
 volume/
 jenkins/config
 env/
+.env2
