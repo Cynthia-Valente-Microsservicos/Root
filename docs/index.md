@@ -6,7 +6,7 @@
     2026.1
 
 
-## Grupo 6
+## Grupo 5
 
 1. Cynthia Naoko Yasutake
 2. Gustavo Victor Valente de Braga Souza
