@@ -130,3 +130,7 @@ extra_javascript:
 
 nav:
   - Home: index.md
+  - Microsserviços:
+    - Product API: service/product-api.md
+    - Order API: service/order-api.md
+    - Exchange API: service/exchange-api.md

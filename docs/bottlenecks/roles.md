@@ -1,0 +1,1 @@
+# Controle de acesso baseado em papéis (RBAC)
