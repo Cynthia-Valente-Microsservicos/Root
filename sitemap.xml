@@ -2,6 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/</loc>
-         <lastmod>2026-05-20</lastmod>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/paas-costs-sla/</loc>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/bottlenecks/messaging/</loc>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/bottlenecks/redis/</loc>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/bottlenecks/roles/</loc>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/infrastructure/aws/</loc>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/infrastructure/ci-cd/</loc>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/infrastructure/ecr/</loc>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/infrastructure/eks/</loc>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/infrastructure/load-testing/</loc>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/service/exchange-api/</loc>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/service/order-api/</loc>
+         <lastmod>2026-05-29</lastmod>
+    </url>
+    <url>
+         <loc>https://Cynthia-Valente-Microsservicos.github.io/Root/service/product-api/</loc>
+         <lastmod>2026-05-29</lastmod>
     </url>
 </urlset>
