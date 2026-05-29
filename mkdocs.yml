@@ -134,3 +134,13 @@ nav:
     - Product API: service/product-api.md
     - Order API: service/order-api.md
     - Exchange API: service/exchange-api.md
+  - Bottlenecks:
+    - Roles: bottlenecks/roles.md
+    - Cache: bottlenecks/redis.md
+    - Messaging: bottlenecks/messaging.md
+  - Infraestrutura:
+    - AWS: infrastructure/aws.md
+    - CI/CD: infrastructure/ci-cd.md
+    - ECR: infrastructure/ecr.md
+    - EKS: infrastructure/eks.md
+    - Load Testing: infrastructure/load-testing.md
