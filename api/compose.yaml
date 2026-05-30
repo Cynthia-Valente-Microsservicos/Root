@@ -102,11 +102,13 @@ services:
       DATABASE_DB: ${DB_NAME:-store}
       DATABASE_USERNAME: ${DB_USER:-store}
       DATABASE_PASSWORD: ${DB_PASSWORD:-devpass}
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     deploy:
       replicas: 1
     depends_on:
       - db
       - redis
+      - kafka
 
   kafka:
     image: apache/kafka:latest
