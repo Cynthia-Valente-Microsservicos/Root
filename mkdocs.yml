@@ -110,6 +110,7 @@ plugins:
       enable_creation_date: true
   - git-authors
   - search
+  - include-markdown
   - badges
   - minify:
       minify_html: true

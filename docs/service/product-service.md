@@ -1,0 +1,1 @@
+{% include "../api/product-service/README.md" %}
