@@ -27,8 +27,8 @@ scrape_configs:
         labels:
           application: 'Account Application'
 
-  - job name: 'ProductMetrics'
-    metrics_path: 'products/actuator/prometheus'
+  - job_name: 'ProductMetrics'
+    metrics_path: '/products/actuator/prometheus'
     scrape_interval: 1s
     static_configs:
       - targets:
@@ -36,8 +36,8 @@ scrape_configs:
         labels: 
           application: 'Product Application'
   
-  - job name: 'OrderMetrics'
-    metrics_path: 'orders/actuator/prometheus'
+  - job_name: 'OrderMetrics'
+    metrics_path: '/orders/actuator/prometheus'
     scrape_interval: 1s
     static_configs:
       - targets:
