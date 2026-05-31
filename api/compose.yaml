@@ -154,5 +154,17 @@ services:
       - db
       - kafka
 
+  exchange:
+    build:
+      context: ./exchange-service
+      dockerfile: Dockerfile
+    hostname: exchange
+    environment:
+      EXCHANGE_PROVIDER: ${EXCHANGE_PROVIDER:-exchangerate}
+      EXCHANGE_API_TIMEOUT: ${EXCHANGE_API_TIMEOUT:-10}
+      EXCHANGE_SPREAD: ${EXCHANGE_SPREAD:-0.02}
+    deploy:
+      replicas: 1
+
 volumes:
   redis_data:

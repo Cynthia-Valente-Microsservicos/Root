@@ -44,3 +44,12 @@ scrape_configs:
         - order:8080
         labels:
           application: 'Order Application'
+
+  - job_name: 'ExchangeMetrics'
+    metrics_path: '/exchanges/actuator/prometheus'
+    scrape_interval: 1s
+    static_configs:
+      - targets:
+        - exchange:8080
+        labels:
+          application: 'Exchange Application'
