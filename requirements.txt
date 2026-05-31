@@ -5,6 +5,7 @@ mkdocs-material
 mkdocs-material-extensions
 mkdocs-minify-plugin
 mkdocs-glightbox
+mkdocs-include-markdown-plugin
 mkdocs-git-authors-plugin
 mkdocs-git-committers-plugin-2
 mkdocs-git-revision-date-localized-plugin
