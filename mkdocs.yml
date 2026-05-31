@@ -138,6 +138,8 @@ nav:
     - Roles: bottlenecks/roles.md
     - Cache: bottlenecks/redis.md
     - Messaging: bottlenecks/messaging.md
+    - Load Balancer: bottlenecks/nginx.md
+    - Observability: bottlenecks/prometheus.md
   - Infraestrutura:
     - AWS: infrastructure/aws.md
     - CI/CD: infrastructure/ci-cd.md
