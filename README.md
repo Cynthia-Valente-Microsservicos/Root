@@ -14,14 +14,14 @@ Cliente (React + Vite)
   Gateway-Service  ←──── auth-service (valida JWT)
    (3 réplicas)
         │
-  ┌─────┼───────────────┐
-  ▼     ▼               ▼
-account auth          product  order
-:8080  :8080          :8080    :8080
-  │                     │        │
-  ▼                     ▼        ▼
-PostgreSQL            Redis    Kafka
-                    (cache)  (order-events)
+  ┌─────┼───────────────┬──────────────┐
+  ▼     ▼               ▼              ▼
+account auth          product  order   exchange
+:8080  :8080          :8080    :8080   :8080
+  │                     │        │        │
+  ▼                     ▼        ▼        ▼
+PostgreSQL            Redis    Kafka   ExchangeRate-API
+                    (cache)  (order-events)  (terceiros)
                                  │
                                  └──► product-service
                                       (reduz estoque)
@@ -37,6 +37,7 @@ PostgreSQL            Redis    Kafka
 | `auth-service` | Autenticação e geração de tokens JWT | — |
 | `product-service` | Catálogo de produtos com cache Redis | — |
 | `order-service` | Pedidos — publica eventos no Kafka | — |
+| `exchange-service` | Conversão de moedas em tempo real (Python/FastAPI) | — |
 
 ## Infraestrutura
 
@@ -116,7 +117,7 @@ mkdocs serve
 
 ## Stack
 
-- **Backend:** Java 25 · Spring Boot 4.x · Spring Cloud 2025.x
+- **Backend:** Java 25 · Spring Boot 4.x · Spring Cloud 2025.x · Python 3.13 · FastAPI
 - **Frontend:** React 19 · Vite 8
 - **Dados:** PostgreSQL 17 · Redis 7 · Apache Kafka
 - **Observabilidade:** Prometheus · Grafana · Micrometer
