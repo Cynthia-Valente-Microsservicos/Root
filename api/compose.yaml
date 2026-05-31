@@ -91,25 +91,6 @@ services:
     depends_on:
       - gateway
   
-  product:
-    build:
-      context: ./product-service
-      dockerfile: Dockerfile
-    hostname: product
-    environment:
-      DATABASE_HOST: db
-      DATABASE_PORT: 5432
-      DATABASE_DB: ${DB_NAME:-store}
-      DATABASE_USERNAME: ${DB_USER:-store}
-      DATABASE_PASSWORD: ${DB_PASSWORD:-devpass}
-      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
-    deploy:
-      replicas: 1
-    depends_on:
-      - db
-      - redis
-      - kafka
-
   kafka:
     image: apache/kafka:latest
     hostname: kafka
@@ -134,6 +115,25 @@ services:
       KAFKA_CLUSTERS_0_NAME: local
       KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
     depends_on:
+      - kafka
+
+  product:
+    build:
+      context: ./product-service
+      dockerfile: Dockerfile
+    hostname: product
+    environment:
+      DATABASE_HOST: db
+      DATABASE_PORT: 5432
+      DATABASE_DB: ${DB_NAME:-store}
+      DATABASE_USERNAME: ${DB_USER:-store}
+      DATABASE_PASSWORD: ${DB_PASSWORD:-devpass}
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+    deploy:
+      replicas: 1
+    depends_on:
+      - db
+      - redis
       - kafka
 
   order:

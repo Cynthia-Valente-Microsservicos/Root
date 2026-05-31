@@ -1,1 +1,1 @@
-{% include "../api/product/README.md" %}
+{% include "../../api/product/README.md"" %}
